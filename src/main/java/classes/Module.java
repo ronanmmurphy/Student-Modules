@@ -1,36 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//module class for modules and their attributes
 package classes;
+
 import java.util.ArrayList;
+
 /**
  *
- * @author Ronan
+ * @author Ronan 15397831
  */
 public class Module {
+    //modules name and course code and arraylist of students in modules
     private String moduleName;
     private String modulecode;
     private ArrayList<Student> students;
-    public Module(String moduleName, String modulecode){
-        this.moduleName=moduleName;
-        this.modulecode=modulecode;
-    }
-    public String getmoduleName() {
-		return moduleName;
-	}
-    
-    public String getmodulecode() {
-		return modulecode;
-	}
 
+    //module constuctor for everymoduel name, code and list of students
+    public Module(String moduleName, String modulecode, ArrayList<Student> students) {
+        this.moduleName = moduleName;
+        this.modulecode = modulecode;
+        this.students = students;
+        //loop through students list and add modules
+        for (int i = 0; i < students.size(); i++) {
+            students.get(i).addModule(this);
+        }
+    }
+    //setters and getters for attributes
+    public String getmoduleName() {
+        return moduleName;
+    }
+
+    public String getmodulecode() {
+        return modulecode;
+    }
+    //arraylist for students and add studnets to it methods
     public ArrayList<Student> getStudents() {
-		return students;
-	}
-	
+        return students;
+    }
+
     public void addStudents(ArrayList<Student> students) {
-		this.students.addAll(students);
-}
-    
+        this.students.addAll(students);
+    }
+
 }
