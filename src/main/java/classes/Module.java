@@ -23,7 +23,7 @@ public class Module {
             students.get(i).addModule(this);
         }
     }
-    //setters and getters for attributes
+    //setters and getters for attributes 
     public String getmoduleName() {
         return moduleName;
     }
