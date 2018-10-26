@@ -13,7 +13,7 @@ public class Module {
     private String modulecode;
     private ArrayList<Student> students;
 
-    //module constuctor for everymoduel name, code and list of students
+    //module constuctor for every module name, code and list of students
     public Module(String moduleName, String modulecode, ArrayList<Student> students) {
         this.moduleName = moduleName;
         this.modulecode = modulecode;
