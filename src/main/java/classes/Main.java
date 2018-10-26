@@ -27,7 +27,7 @@ public class Main {
         Student Ronan = new Student("RonanMurphy", 20, "04/02/1998", "ECE");
         Student Denis = new Student("DenisHynes", 22, "14/08/1997", "CS");
         Student Tommy = new Student("TommyMcDonagh", 21, "11/05/1997", "ECE");
-        Student Treasa = new Student("BaqdaraDay", 21, "21/11/1999", "CS");
+        Student Treasa = new Student("TreasaDay", 21, "21/11/1999", "CS");
         Student Ruth = new Student("RuthWhistler", 19, "17/01/1997", "ECE");
         Student Sarah = new Student("SarahGoffery", 20, "29/10/1997", "CS");
 
