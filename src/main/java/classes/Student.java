@@ -93,7 +93,6 @@ public class Student {
         StringBuilder modulesString = new StringBuilder();
         for (int i = 0; i < this.getModules().size(); i++) {
             modulesString.append("\t" + this.getModules().get(i).getmoduleName());
-
         }
         //returns string with the modules for student
         return ("; Modules: " + modulesString);
